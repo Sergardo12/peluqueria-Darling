@@ -1,0 +1,84 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+:root {
+    --color_bg: rgba(5, 7, 12, 0.4);
+    --headerColor: #f0f8ff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 25px;
+}
+
+body {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    background: linear-gradient(var(--color_bg), var(--color_bg)),
+    url(img/header.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* navBar */
+
+.navBar {
+    display: flex;
+    padding: 20px 20px;
+}
+
+.navBar li, a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--headerColor)
+}
+
+.navbarIz {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+}
+
+.navbarDe {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+.logo {
+    flex: 0.5;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+/* Header */
+
+.header {
+    height: 85%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header h1 {
+    font-size: clamp(1.8rem, 16vw + -7.3rem, 3.5rem);
+    text-align: center;
+    color: var(--headerColor);
+    letter-spacing: 5px;
+}
+
+.header span {
+    color: #F4BD9F;
+}
